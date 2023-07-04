@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        min-height: 50px;
+        min-width: 50px;
+        padding: 30px;
+        border: 2px solid black;
+      }
+      #grandparent {
+        background-color: green;
+      }
+      #parent {
+        background-color: yellow;
+      }
+      #child {
+        background-color: red;
+      }
+      .products{
+        display: flex
+      }
+      /* .mobile,.laptop,.watch {
+        height: 200px;
+        width: 200px;
+        background-color: yellow;
+        border: 2px solid yellowgreen;
+        font-size: 70px;
+      } */
+      span{
+        display: flex;
+        height: 200px;
+        width: 200px;
+        background-color: yellow;
+        border: 2px solid yellowgreen;
+        font-size: 40px;
+        margin: 10px 10px;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="grandparent">
+      <p id="parent">
+        <button id="child">Hello</button>
+      </p>
+    </div>
+    <div class="products">
+      <span class="mobile">mobile</span>
+      <span class="laptop">laptop</span>
+      <span class="watch">watch</span>
+    </div>
+    <script src="./Video_11.js"></script>
+  </body>
+</html>

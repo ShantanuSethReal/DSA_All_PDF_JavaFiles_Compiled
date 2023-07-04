@@ -1,0 +1,100 @@
+//********************************NAMASTE JAVASCRIPT***********************************************************
+
+2.How Javascript Works-Execution Context
+    Memory-Variable Environment
+    Code  -Thread of Execution
+
+3.How Javascript Code is executed
+    GEC-Global Execution Contest
+    Phase 1- Memory Creation Phase
+    Phase 2- Code Execution Phase
+
+    [Call Stack,Function invocation]
+4.Hoisting in JS(variables and functions)
+    Var declared as undefined in Memory Creation Phase
+    Function given a block of Memory
+
+5.How Functions Work in JS
+    A new Execution Context is created in Call Stack on function Execution
+
+6.Shortest JS program- window and this keyword
+    window===this in GEC
+
+7.Undefined and Not Defined in JS
+    Undefined-placeholder in Memory(We have declared it but not initialised)
+    Not Defined - We have not declared the variables
+
+8.The Scope Chain-Lexical Environment
+    JS finds variable in Local Execution Context then looks for it in Lexical Environmentof parent Execution Context and so..on
+    Where can you access the variable
+    Lexical Env=Lexical Env of Execution Context+ Lexical Global Scope
+    Local Execution Context(Local Memory) + Memory Reference if Lexical Parenr = Lexical Env
+    Scope Chain
+
+9.Let & Const variable in JS Hoisting
+    Temporal dead zone**
+    let and const variables are hoisted in Temporal dead zone
+    Let and Const are block scoped , inside Script obj
+    Var is Global Scoped , Inside Global obj
+    Let and Const cannot be accessed before they are initialised.(Throws a Reference Error)
+    Syntax Error,Type Error,Reference Error
+
+10.Block Scope in JS
+    Shadowing in JS - var| Illegal Shadowing - let,const
+
+12.Closures in JS
+    Functions bundled with its lexical scope when function is returned from another ,it remembers its lexical Env
+    fn + Lexical env = Closure
+
+13.Set TimeOut and Closures
+    Javascript doesn't wait for settimeout
+
+14.Crazy Js Interview
+
+//********************************NAMASTE JAVASCRIPT 2***********************************************************
+2.CallBack Hell
+
+3.Promises
+
+4.Creating a Promise,Chaining and Error handling
+
+16.First Class Functions
+    function statement
+    function f1(){
+
+    }
+    function expression
+    var f= function f1(){}
+    function declaration - is difference between fn statement and fn expression
+    Anonymous fns- When fns used as variable
+    First Class functions- you can recieve fns as arguments.
+    Ex. function ffc(function f1(){},function f2(){})|function ffc(f1,f2,f3...)
+
+    Parameter and arguments -
+
+17.CallBack Functions in JS
+    function x(y){
+        a...
+        y()
+    }
+    function x(func y(){},m,n){
+        y();
+    }
+18.Asynchronous Javascript and Event Loop From Scratch
+    Callback Queue,Microtsk Queue
+    JS engine-GEC-Event Loop-Web API-Call Stack
+
+19.JS Engine 
+    JS engine,API,CallBack Queue,Microtask Queue
+    AST abstract syntax tree,JIT Compilation
+
+20.Trust Issues with settimeout
+
+21.Higher Order functions
+
+22.Map,filter,reduce
+    arr.map((ele)=>{return {logic}});
+    arr.filter((ele)=>{return {logic}})
+    arr.reduce((acc,cur)=>{return {logic}})
+
+23.
